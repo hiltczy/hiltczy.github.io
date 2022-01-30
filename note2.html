@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!--
+	第二篇 如何使用PE安装操作系统
+-->
+<html>
+	<head>
+		<title>第二篇 如何使用PE安装操作系统</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>如何使用PE安装操作系统</h1>
+						<p>2021/01/30 原创</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/img02.jpg" alt="" /></span>
+								<h3>什么是Windows PE</h3>
+								<p>Windows PE 是一个小型操作系统，用于安装、部署和修复 Windows 桌面版、Windows Server 和其他 Windows 操作系统。今天我们要用WinPE来给计算机安装（Windows）系统。</p>
+								<h3>需要准备什么</h3>
+								<p>既然要使用 Windows PE 给计算机安装操作系统，那我们就要先准备一个PE工具箱，并使用它制作一个启动盘。其次，我们还需要准备我们将要安装的系统的光盘映像文件（.iso），准备好以后，我们就可以开始安装操作系统了。</p>
+								<h3>第一步 制作PE启动盘</h3>
+								<p>这一步中我们要用到PE工具箱，推荐使用“微PE工具箱”或“优启通”，可以到官网下载。当然，如果能力和时间允许，也可以自己制作。然后我们需要将PE写入一个存储介质（如U盘、移动硬盘等），我们可以直接运行下载的可执行文件，按照要求进行制作。如果你的Windows PE系统是一个光盘映像文件（.iso）的话，就需要用启动盘制作工具（如Rufus）写入了。</br>制作完成后，存储设备一般会被分区，而Windows只能在资源管理器中显示有盘符的分区，所以显示的存储设备的容量变小是正常的。</p>
+								<h3>第二步 启动Windows PE操作系统</h3>
+								<p>我们首先要将制作好的启动盘插入计算机，并按下开机按钮。在还未进入默认操作系统的时候，按下快捷键，进入启动菜单。这个快捷键每个主板不一样，具体可以自行查询。然后通过键盘选择我们的启动盘，按下回车键。这时不出意外的话就会进入Windows PE操作系统。</br>如果无法进入，检查一下是否按错了快捷键或选错了启动项，如果不行，回到第一步再试试看。</p>
+								<h3>第三步 安装操作系统</h3>
+								<p>在进入Windows PE后，我们需要先挂载我们下载的Windows系统映像文件（右键文件>挂载），之后运行映像文件中的安装程序（setup.exe）并安装即可。</br>另一种方法，我们打开PE中内置的Windows安装器程序，选择我们下载的映像文件，挂载分区和目标分区都选择将要安装系统的磁盘分区，安装即可。</p>
+								<p align="right"><i>(未经允许请勿转载，如有疏漏之处欢迎指出)</i></p>
+							</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
